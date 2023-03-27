@@ -32,3 +32,5 @@ def read_oor_emails(filename:str=None, save_to_excel:bool=False):
     if save_to_excel and filename:
         print(f'Saved {filename}.xlsx in Documents Folder')
         dataframe.to_excel(f'{WORKING_DIRECTORY}{filename}.xlsx')
+    else:
+        return dataframe
